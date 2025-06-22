@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.App-logo {
+  
+  width: 15em;
+  object-fit: contain;
+}
+
+#PrincipalLoginTextBox {
+  padding: 1em;
+  margin: 0 auto;
+}
+#PrincipalLoginTextBox h2 {
+  color: black;
+  margin-bottom: 1em;
+}
+
+
+#PrincipalLoginTextBox form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+
+#PrincipalLoginTextBox form label img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.labelForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: black;
+}
+
+.inputPrincipal {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  
+}
+
+#ExtraLoginOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#rememberMeSection {
+  display: flex;
+  align-items: center;
+  
+}
+
+#forgotPasswordSection a {
+  color: #000000;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+#forgotPasswordSection a:hover {
+  color: #A5D6A7;
+}
+
+#buttonForm {
+  width: 100%;
+  background-color: #4CAF4F;
+}
+
+#buttonForm:active {
+  opacity: 0.5;
+}
+
+#ExtraLoginImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#ExtraLoginImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.socialLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.socialLogin button{
+  gap: 2em;
+}
+.socialLogin button img {
+  width: 2em;
+  height: 1.5em;
+  object-fit: contain;
+}
+Footer {
+  display: flex;
+  flex-direction: column;
+}
+.socialLogin a{
+  color: #A5D6A7;
+  text-decoration: underline;
+  transition: 0.2s;
+  font-weight: bold;
+}
+Footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  
+}
+Footer img {
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: contain;
+}
+Footer p{
+  color: #A5D6A7;
+  text-align: center;
+  margin: 0;
+}
