@@ -70,7 +70,20 @@ const LandingPage = () => {
     };
 
     window.moveSlide = moveSlide;
-
+         // === INICIO: Scripts de Botpress con carga en orden ===
+  if (!window.botpressWebChat) {
+    const script = document.createElement("script");
+    script.src = "https://cdn.botpress.cloud/webchat/v3.0/inject.js";
+    script.defer = true;
+    script.onload = () => {
+      const configScript = document.createElement("script");
+      configScript.src = "https://files.bpcontent.cloud/2025/07/06/01/20250706014619-G59SKLSN.js";
+      configScript.defer = true;
+      document.body.appendChild(configScript);
+    };
+    document.body.appendChild(script);
+  }
+  // === FIN: Scripts de Botpress ===
     return () => {
       window.removeEventListener('resize', handleResize);
       delete window.moveSlide;
